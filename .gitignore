@@ -1,0 +1,34 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtualenv
+.venv/
+venv/
+
+# Secrets — never commit
+.env
+*.env.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Runtime artifacts
+logs/
+*.log
+data_cache/runtime/
+data_cache/intraday_*.csv
+
+# Models (large binary)
+models/*.joblib
+models/*.pkl
+!models/.gitkeep
+
+# Build / dist
+build/
+dist/
+*.egg-info/

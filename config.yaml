@@ -1,0 +1,30 @@
+# A 股实时分析助手 - 用户配置
+# 修改后无需重启调度，下次触发自动加载
+
+# ======== 持仓 ========
+# 你目前只持仓京东方，仓位 30%
+portfolio:
+  total_position_pct: 30        # 30% 仓位
+  cash_pct: 70                 # 70% 现金
+  holdings:
+    - { symbol: "000725", cost: 0, shares: 0 }   # 京东方A —— 填入你的真实成本和股数
+
+# ======== 关注列表（暂时空，按需加）========
+watchlist: []
+
+# ======== 触发时点 ========
+triggers:
+  morning_close: "11:30"
+  afternoon_close: "14:30"
+
+# ======== 风险偏好 ========
+risk_profile:
+  max_single_position_pct: 30    # 单只最大仓位（你集中度高，可以放宽到 30-40%）
+  stop_loss_pct: 8                # 止损线
+  take_profit_pct: 25             # 止盈线
+
+# ======== 输出 ========
+output:
+  push_to_wechat: true
+  save_locally: true
+  output_dir: "./reports"
