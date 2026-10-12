@@ -59,7 +59,7 @@ WECOM_AES_KEY=43位的EncodingAESKey                                            
 **方式 A（推荐）**：`all` 一个进程同时跑 Flask + 11:30/14:30 调度器
 
 ```bash
-cd /Users/jiangwenrui/Downloads/mass/A
+cd /Users/jiangwenrui/Downloads/mass/20-A
 .venv/bin/python main.py all
 ```
 
@@ -135,7 +135,7 @@ Forwarding       https://xxxx-xxx-xxx-xxx-xxx.ngrok-free.app -> http://localhost
 - 每天开机后：
   ```bash
   # 终端 1
-  cd /Users/jiangwenrui/Downloads/mass/A
+  cd /Users/jiangwenrui/Downloads/mass/20-A
   .venv/bin/python main.py webhook
 
   # 终端 2
